@@ -2,6 +2,8 @@ import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 
+import { Form as FormUnform } from '@unform/mobile';
+
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 export const Container = styled.View`
@@ -40,4 +42,8 @@ export const BackToSignInText = styled.Text`
 
 export const Icon = styled(FeatherIcon)`
   margin-right: 16px;
+`;
+
+export const Form = styled(FormUnform)`
+  align-items: center;
 `;

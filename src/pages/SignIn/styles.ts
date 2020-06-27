@@ -2,6 +2,8 @@ import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 
+import { Form as FormUnform } from '@unform/mobile';
+
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 export const Container = styled.View`
@@ -42,11 +44,14 @@ export const CreateAccountButton = styled.TouchableOpacity`
   flex-direction: row;
 `;
 export const CreateAccountButtonText = styled.Text`
-  color: #fff;
+  color: #ff9000;
   font-size: 18px;
   font-family: 'RobotoSlab-Regular';
 `;
 
 export const Icon = styled(FeatherIcon)`
   margin-right: 16px;
+`;
+export const Form = styled(FormUnform)`
+  align-items: center;
 `;
